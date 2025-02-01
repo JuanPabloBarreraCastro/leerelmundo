@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leer el Mundo - Fomenta el Amor por la Lectura</title>
+  <!-- Bootstrap CSS (versión 5) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4CAF50, #388E3C);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav.navbar {
+      background: #333;
+    }
+    nav.navbar .nav-link {
+      color: #fff !important;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .footer {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    /* Estilos para las pestañas en la sección de Servicios */
+    .nav-tabs .nav-link.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Leer el Mundo</h1>
+      <p>Fomentando el amor por la lectura y el aprendizaje a través de experiencias únicas</p>
+    </div>
+  </header>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Leer el Mundo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección: Inicio -->
+  <section id="inicio" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Bienvenidos</h2>
+      <p class="lead text-center">
+        Descubre la magia de la lectura y el aprendizaje con actividades interactivas y emocionantes. ¡Explora el mundo a través de los libros, experimentos y talleres!
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección: Sobre mí -->
+  <section id="sobre-mi">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      <p>
+        Soy Ana Patricia, una apasionada educadora con experiencia en diversos ámbitos. Mi misión es inspirar a niños, padres y maestros a redescubrir el amor por la lectura y el aprendizaje mediante métodos innovadores y dinámicos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección: Servicios con pestañas -->
+  <section id="servicios" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Servicios</h2>
+      <!-- Pestañas (Tabs) para clasificar servicios -->
+      <ul class="nav nav-tabs justify-content-center" id="servicesTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="cuentacuentos-tab" data-bs-toggle="tab" data-bs-target="#cuentacuentos" type="button" role="tab" aria-controls="cuentacuentos" aria-selected="true">
+            Cuentacuentos
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="talleres-tab" data-bs-toggle="tab" data-bs-target="#talleres" type="button" role="tab" aria-controls="talleres" aria-selected="false">
+            Talleres Educativos
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="shows-tab" data-bs-toggle="tab" data-bs-target="#shows" type="button" role="tab" aria-controls="shows" aria-selected="false">
+            Shows para Fiestas
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="cursos-tab" data-bs-toggle="tab" data-bs-target="#cursos" type="button" role="tab" aria-controls="cursos" aria-selected="false">
+            Cursos para Padres y Maestros
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content mt-4" id="servicesTabContent">
+        <div class="tab-pane fade show active" id="cuentacuentos" role="tabpanel" aria-labelledby="cuentacuentos-tab">
+          <p>
+            Disfruta de sesiones interactivas de cuentacuentos donde los niños se sumergen en historias llenas de imaginación y creatividad.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="talleres" role="tabpanel" aria-labelledby="talleres-tab">
+          <p>
+            Participa en talleres educativos que combinan lectura, experimentos y dinámicas divertidas para aprender de forma innovadora.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="shows" role="tabpanel" aria-labelledby="shows-tab">
+          <p>
+            Ofrecemos shows para fiestas que convierten cualquier evento en una experiencia única y mágica, impulsando la creatividad y la pasión por la lectura.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="cursos" role="tabpanel" aria-labelledby="cursos-tab">
+          <p>
+            Brindamos cursos y capacitaciones para padres y maestros, con estrategias prácticas para fomentar el amor por la lectura y mejorar el aprendizaje en los niños.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Testimonios -->
+  <section id="testimonios">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Una experiencia mágica que hizo que nuestros niños amaran la lectura."</p>
+            <footer class="blockquote-footer">Padre/Madre</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Los talleres de 'Leer el Mundo' han transformado nuestras clases."</p>
+            <footer class="blockquote-footer">Maestro/a</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Una iniciativa inspiradora y llena de creatividad."</p>
+            <footer class="blockquote-footer">Estudiante</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <p class="text-center">
+        ¿Quieres saber más o agendar un taller? Contáctame llenando el siguiente formulario o escribe a mi correo.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="mailto:tucorreo@example.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-success">Enviar Mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Leer el Mundo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
