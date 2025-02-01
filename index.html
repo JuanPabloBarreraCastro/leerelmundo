@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leer el Mundo - Cuentacuentos y Talleres Educativos</title>
+  <title>Leer el Mundo - Magia y Lectura</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Cinzel para títulos y Open Sans para el cuerpo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
       scroll-behavior: smooth;
+      background: #f7f7f7;
     }
-    h1, h2, h3, h4 {
-      font-family: 'Montserrat', sans-serif;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cinzel', serif;
     }
     /* Navbar */
     .navbar {
-      background-color: #1c1c1c;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
     }
     .navbar-brand, .nav-link {
-      color: #f8f9fa !important;
+      color: #fff !important;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
     .nav-link:hover {
-      color: #ffbb00 !important;
+      color: #ffdf00 !important;
     }
     /* Header / Inicio */
     header {
-      background: url('https://via.placeholder.com/1920x800') no-repeat center center;
+      background: url('https://source.unsplash.com/1600x900/?fantasy,magic') no-repeat center center;
       background-size: cover;
       position: relative;
       color: #fff;
@@ -37,36 +38,54 @@
     }
     header::before {
       content: "";
-      background-color: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
       position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
     header .container {
       position: relative;
       z-index: 2;
       padding-top: 150px;
+      text-align: center;
     }
     header h1 {
-      font-size: 4rem;
-      font-weight: bold;
+      font-size: 4.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
     header p {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     }
-    /* Secciones */
+    /* Sección de Títulos */
     .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2.75rem;
+      margin-bottom: 40px;
       text-align: center;
       color: #333;
+      position: relative;
     }
-    /* Cards y Contenido */
+    .section-title::after {
+      content: "";
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    /* Cards */
     .card {
       border: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
     }
     .card-img-top {
       height: 200px;
@@ -74,12 +93,12 @@
     }
     /* Footer */
     footer {
-      background-color: #1c1c1c;
+      background: #1c1c1c;
       color: #f8f9fa;
       padding: 20px 0;
     }
     footer a {
-      color: #ffbb00;
+      color: #ffdf00;
       text-decoration: none;
     }
     footer a:hover {
@@ -88,14 +107,13 @@
   </style>
 </head>
 <body>
-
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Leer el Mundo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -113,10 +131,10 @@
 
   <!-- Header / Inicio Section -->
   <header id="inicio">
-    <div class="container text-center">
+    <div class="container">
       <h1>Bienvenidos a Leer el Mundo</h1>
-      <p>Descubre, aprende y sueña a través de la lectura y la aventura educativa</p>
-      <a href="#contacto" class="btn btn-primary btn-lg mt-4">Reserva tu Show</a>
+      <p>Una aventura mágica a través de la lectura y el conocimiento</p>
+      <a href="#contacto" class="btn btn-lg btn-warning mt-4">Reserva tu Show</a>
     </div>
   </header>
 
@@ -126,11 +144,11 @@
       <h2 class="section-title">Sobre Nosotros</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Sobre Nosotros">
+          <img src="https://source.unsplash.com/600x400/?storybook,fantasy" class="img-fluid rounded" alt="Sobre Nosotros">
         </div>
         <div class="col-md-6">
-          <p>En <strong>Leer el Mundo</strong> creemos que cada libro es una puerta a nuevas aventuras y aprendizajes. Con años de experiencia en cuentacuentos y talleres educativos, transformamos la forma en que los niños, maestros y padres se relacionan con la lectura y el conocimiento.</p>
-          <p>Nuestro enfoque está dirigido a directores de escuelas que buscan brindar a sus estudiantes experiencias inolvidables, así como a capacitaciones para docentes y familias que desean inspirar a los más pequeños.</p>
+          <p>En <strong>Leer el Mundo</strong> creemos que cada libro es una puerta a nuevas aventuras y aprendizajes. Con pasión y dedicación, transformamos la lectura en una experiencia mágica para niños, maestros y familias.</p>
+          <p>Nuestro enfoque está dirigido a directores de escuelas que desean inspirar a sus estudiantes, así como a docentes y padres que quieren transmitir la magia de la lectura.</p>
         </div>
       </div>
     </div>
@@ -143,31 +161,31 @@
       <div class="row">
         <!-- Cuentacuentos y Animación a la Lectura -->
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Cuentacuentos">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?magic,books" class="card-img-top" alt="Cuentacuentos">
             <div class="card-body">
               <h5 class="card-title">Cuentacuentos y Animación a la Lectura</h5>
-              <p class="card-text">Sesiones interactivas en escuelas, bibliotecas y eventos para enamorar a los niños de la lectura.</p>
+              <p class="card-text">Sesiones interactivas que despiertan la imaginación de los niños y los enamoran de la lectura.</p>
             </div>
           </div>
         </div>
         <!-- Talleres Educativos -->
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Talleres Educativos">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?education,workshop" class="card-img-top" alt="Talleres Educativos">
             <div class="card-body">
               <h5 class="card-title">Talleres Educativos</h5>
-              <p class="card-text">Clases y talleres en diversas materias usando métodos lúdicos para aprender de forma divertida.</p>
+              <p class="card-text">Clases y talleres que combinan diversión y aprendizaje en diversas materias.</p>
             </div>
           </div>
         </div>
         <!-- Shows para Fiestas -->
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Shows para Fiestas">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?party,magic" class="card-img-top" alt="Shows para Fiestas">
             <div class="card-body">
               <h5 class="card-title">Shows para Fiestas</h5>
-              <p class="card-text">Presentaciones temáticas que combinan lectura, experimentos y entretenimiento para eventos especiales.</p>
+              <p class="card-text">Presentaciones temáticas que combinan lectura, experimentos y entretenimiento para eventos inolvidables.</p>
             </div>
           </div>
         </div>
@@ -175,21 +193,21 @@
       <div class="row">
         <!-- Cursos para Padres y Maestros -->
         <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Cursos para Padres y Maestros">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?parents,workshop" class="card-img-top" alt="Cursos para Padres y Maestros">
             <div class="card-body">
               <h5 class="card-title">Cursos para Padres y Maestros</h5>
-              <p class="card-text">Capacitaciones en técnicas de animación a la lectura y estrategias educativas para inspirar a los adultos.</p>
+              <p class="card-text">Capacitaciones para inspirar y fomentar la lectura en familia y en el aula.</p>
             </div>
           </div>
         </div>
         <!-- Exploración del Mundo -->
         <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Exploración del Mundo">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?adventure,exploration" class="card-img-top" alt="Exploración del Mundo">
             <div class="card-body">
               <h5 class="card-title">Exploración del Mundo</h5>
-              <p class="card-text">Actividades para incentivar la curiosidad y el aprendizaje sobre diferentes culturas, ciencias y artes.</p>
+              <p class="card-text">Actividades diseñadas para incentivar la curiosidad y el aprendizaje sobre culturas y ciencias.</p>
             </div>
           </div>
         </div>
@@ -201,8 +219,7 @@
   <section id="agenda" class="py-5">
     <div class="container">
       <h2 class="section-title">Agenda de Eventos</h2>
-      <p class="text-center">Consulta nuestros próximos eventos y talleres. ¡Mantente al tanto de las novedades!</p>
-      <!-- Ejemplo de evento -->
+      <p class="text-center">Consulta nuestros próximos eventos y talleres. ¡Mantente atento a las novedades!</p>
       <div class="card p-4">
         <p><strong>Próximo Evento:</strong> Cuentacuentos en la Escuela "Horizontes".</p>
         <p><strong>Fecha:</strong> 15 de mayo de 2025</p>
@@ -218,34 +235,34 @@
       <div class="row">
         <!-- Post 1 -->
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Post 1">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?reading,child" class="card-img-top" alt="Post 1">
             <div class="card-body">
               <h5 class="card-title">El poder de la lectura en la infancia</h5>
               <p class="card-text">Descubre cómo la lectura transforma la vida de los niños y enciende su imaginación.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
+              <a href="#" class="btn btn-warning">Leer más</a>
             </div>
           </div>
         </div>
         <!-- Post 2 -->
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Post 2">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?teacher,classroom" class="card-img-top" alt="Post 2">
             <div class="card-body">
               <h5 class="card-title">Estrategias para motivar a los docentes</h5>
               <p class="card-text">Técnicas y consejos para transformar la enseñanza y motivar a los maestros.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
+              <a href="#" class="btn btn-warning">Leer más</a>
             </div>
           </div>
         </div>
         <!-- Post 3 -->
         <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Post 3">
+          <div class="card">
+            <img src="https://source.unsplash.com/500x300/?inspiration,books" class="card-img-top" alt="Post 3">
             <div class="card-body">
               <h5 class="card-title">Historias que inspiran</h5>
-              <p class="card-text">Testimonios y relatos sobre el impacto de nuestros cuentacuentos en la comunidad educativa.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
+              <p class="card-text">Relatos y testimonios sobre el impacto de nuestros cuentacuentos en la comunidad educativa.</p>
+              <a href="#" class="btn btn-warning">Leer más</a>
             </div>
           </div>
         </div>
@@ -259,13 +276,13 @@
       <h2 class="section-title">Galería</h2>
       <div class="row g-3">
         <div class="col-md-4">
-          <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Galería 1">
+          <img src="https://source.unsplash.com/600x400/?fantasy,illustration" class="img-fluid rounded" alt="Galería 1">
         </div>
         <div class="col-md-4">
-          <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Galería 2">
+          <img src="https://source.unsplash.com/600x400/?magical,landscape" class="img-fluid rounded" alt="Galería 2">
         </div>
         <div class="col-md-4">
-          <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Galería 3">
+          <img src="https://source.unsplash.com/600x400/?storybook,magic" class="img-fluid rounded" alt="Galería 3">
         </div>
       </div>
     </div>
@@ -291,7 +308,7 @@
           <label for="mensaje" class="form-label">Mensaje</label>
           <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        <button type="submit" class="btn btn-warning">Enviar Mensaje</button>
       </form>
       <div class="mt-4 text-center">
         <!-- Redes Sociales -->
